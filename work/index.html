@@ -5,10 +5,196 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FormPractice</title>
+  <link rel="stylesheet" href="css/css/style.css">
 </head>
 
 <body>
-
+  <div class="wrapper">
+    <h1 class="page__title">フォーム作成</h1>
+    <div class="form__wrap">
+      <form action="" method="post" name="account">
+        <h2 class="form__title">アカウント作成</h2>
+        <div class="information__block">
+          <h3 class="block__title">個人情報</h3>
+          <div class="information__q1">
+          <label>
+            <span class="information__q1">姓</span><span class="must">※</span>
+            <input class="input__block" type="text" name="information__q1" id="information__q1" required>
+          </label>
+          </div>
+          <div class="information__q2">
+            <label>
+              <span>名</span><span class="must">※</span>
+              <input class="input__block" type="text" name="information__q2" id="information__q2" required>
+            </label>
+          </div>
+          <div class="information__q3">
+            <span>生年月日</span><span class="must">※</span>
+            <div class="select__flex">
+              <select class="select__flex__item" name="information__q3__select__year" required>
+                <optgroup label="年">
+                  <option hidden>年</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  <option value="2009">2009</option>
+                  <option value="2010">2010</option>
+                </optgroup>
+              </select>
+              <select class="select__flex__item" name="information__q3__select__month" required>
+                <optgroup label="月">
+                  <option hidden>月</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </optgroup>
+              </select>
+              <select class="select__flex__item" name="information__q3__select__date" required>
+                <optgroup label="日">
+                  <option hidden>日</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="information__q4">
+            <span>性別</span><span class="must">※</span>
+            <div class="radio__block">
+              <label>
+                <input type="radio" name="information__q4" value="information__q4__male" required>
+                <span>男性</span>
+              </label>
+              <label>
+                <input type="radio" name="information__q4" value="information__q4__female" required>
+                <span>女性</span>
+              </label>
+              <label>
+                <input type="radio" name="information__q4" value="information__q4__other" required>
+                <span>その他</span>
+              </label>
+            </div>
+          </div>
+          <div class="information__q5">
+            <label>
+              <span>職業</span>
+              <select class="select__block" name="information__q5__select__job">
+                <optgroup label="選択してください">
+                  <option hidden>選択してください</option>
+                  <option value="information__q5__select__student">学生</option>
+                  <option value="information__q5__select__salaryman">会社員</option>
+                  <option value="information__q5__select__housewife">主婦</option>
+                  <option value="information__q5__select__other">その他</option>
+                </optgroup>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="account__block">
+          <h3 class="block__title">アカウント情報</h3>
+          <div class="account__q1">
+            <label>
+              <span>アカウント名</span><span class="must">※</span>
+              <input class="input__block" type="text" name="account__q1" id="account__q1" required>
+            </label>
+          </div>
+          <div class="account__q2">
+            <label>
+              <span>メールアドレス</span><span class="must">※</span>
+              <input class="input__block" type="email" name="account__q2" id="account__q2" required>
+            </label>
+          </div>
+          <div class="account__q3">
+            <label>
+              <span>パスワード</span><span class="must">※</span>
+              <input class="input__block" type="password" name="account__q3" id="account__q3" required>
+            </label>
+          </div>
+          <div class="account__q4">
+            <label>
+              <span>確認用パスワード</span><span class="must">※</span>
+              <input class="input__block" type="password" name="account__q4" id="account__q4" required>
+            </label>
+          </div>
+        </div>
+        <div class="contact__block">
+          <h3 class="block__title">連絡先</h3>
+          <div class="contact__q1">
+            <label>
+              <span>住所</span><span class="must">※</span>
+              <input class="input__block" type="text" name="contact__q1" id="contact__q1" required>
+            </label>
+          </div>
+          <div class="contact__q2">
+            <label>
+              <span>電話番号</span><span class="must">※</span>
+              <input class="input__block" type="tel" name="contact__q2" id="contact__q2" required>
+            </label>
+          </div>
+        </div>
+        <div class="subscription__block">
+          <h3 class="block__title">購読情報</h3>
+          <div class="subscription__q1 checkbox__block">
+            <div class="checkbox__block__item">
+              <input type="checkbox" value="subscription__q1__mailmagazine">
+              <span>メールマガジン</span>
+            </div>
+            <div class="checkbox__block__item">
+              <input type="checkbox" value="subscription__q1__coupon">
+              <span>クーポン</span>
+            </div>
+          </div>
+        </div>
+        <div class="submit__btn__block">
+          <button class="submit__btn">アカウント作成</button>
+        </div>
+        <small>アカウントを作成することにより、<a href="#">利用規約</a>と<a href="#">プライバシーポリシー</a>に同意するものとします。</small>
+      </form>
+    </div>
+  </div>
 </body>
-
 </html>
